@@ -10,5 +10,6 @@ namespace Modelo_Examen
     {
         public string Titulo { get; set; }
         public int Sueldo { get; set; }
+        public Curso curso { get; set; }
     }
 }

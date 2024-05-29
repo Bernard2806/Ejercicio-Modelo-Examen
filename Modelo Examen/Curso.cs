@@ -12,6 +12,7 @@ namespace Modelo_Examen
 
         public List<Alumno> alumnos { get; set; } = new List<Alumno>();
         public Profesor profesor { get; set; }
+        public Escuela escuela { get; set; }
 
         public void InscribirAlumno(Alumno alumno) {
             alumnos.Add(alumno);
@@ -19,6 +20,7 @@ namespace Modelo_Examen
 
         public void AsignarProfesor(Profesor profe) {
             profesor = profe;
+            profesor.curso = this;
         }
 
     }
